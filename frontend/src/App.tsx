@@ -127,6 +127,8 @@ export default function App() {
       await transferTx.wait();
       await refreshBalance();
 
+      setRecipient("");
+
       setStatus({
         currentStatus: "success",
         message: `Protected transfer created. The Claim / Refund panel has been pre-filled.`,
