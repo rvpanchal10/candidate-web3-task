@@ -1,0 +1,26 @@
+{
+  "name": "candidate-web3-task",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Candidate-only Web3 hiring task with local ERC20 token transfers, Solidity contracts, and a responsive React frontend.",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev:chain": "npm --workspace backend run node",
+    "deploy:local": "npm --workspace backend run deploy:local",
+    "test:contracts": "npm --workspace backend run test",
+    "dev:frontend": "npm --workspace frontend run dev",
+    "build:frontend": "npm --workspace frontend run build"
+  },
+  "keywords": [
+    "solidity",
+    "web3",
+    "react",
+    "hardhat",
+    "metamask",
+    "candidate-test"
+  ],
+  "license": "UNLICENSED"
+}
